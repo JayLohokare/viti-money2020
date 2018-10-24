@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="13dp"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:padding="-8dp"
+        android:layout_marginBottom="15dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        android:id="@+id/cv"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="12dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageContainer"
+                app:cardCornerRadius="40dp"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                android:thicknessRatio="1.9">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/imageContainer"
+                android:text="Some Text"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/endoresedBY"
+                android:text="Some Text"
+                android:textSize="15sp"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        app:cardElevation="3dp"
+        android:id="@+id/cv2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cv"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/work"
+                android:text="Some Text"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/work"
+                android:text="Some Text"
+                android:layout_below="@+id/TitleWork"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TitleWork"
+                android:text="Work and location"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+
+    android:id="@+id/cards1"
+    android:layout_marginBottom="20dp"
+    android:clipChildren="false"
+
+    >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:paddingBottom="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal" >
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:elevation="3dp"
+                    android:padding="10dp"
+                    android:layout_marginRight="5dp"
+                    app:cardElevation="3dp"
+                    android:id="@+id/balance"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:id="@+id/socialScore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+
+                            android:textColor="@android:color/black"
+                            android:text="Social Score"
+                            android:textSize="20sp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Social Score"
+                            android:textSize="10sp"
+                            android:layout_below="@+id/socialScore"
+
+                            />
+                    </RelativeLayout>
+
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".50"
+                    android:elevation="3dp"
+
+                    android:layout_marginLeft="5dp"
+                    app:cardElevation="3dp"
+                    android:id="@+id/credit"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="100dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/creditScore"
+
+                            android:textColor="@android:color/black"
+                            android:text="Credit Score"
+                            android:textSize="20sp"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="15dp"
+                            android:text="Credit Score"
+                            android:textSize="10sp"
+                            android:layout_below="@+id/creditScore"
+
+                            />
+                    </RelativeLayout>
+
+
+
+
+                  </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:layout_below="@id/cards1"
+                android:id="@+id/PayPal"
+                android:clipChildren="false"
+
+                >
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pay"
+                    android:text="Pay using PayPal"
+                    android:background="@color/yellow"
+                    android:textColor="@color/bluePayPal"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+</RelativeLayout>
